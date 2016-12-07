@@ -1,0 +1,57 @@
+
+<img src="https://i.ytimg.com/vi/cNycdfFEgBc/maxresdefault.jpg" height="200" width="250">
+<br>
+<h1><%=@cat.name %></h1>
+<br>
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Value</th>
+  </tr>
+    <tr>
+      <td>age<td>
+      <td><%= @cat.age %></td>
+    </tr>
+    <tr>
+      <td>Birth Date</td>
+      <td> <%= @cat.birth_date %></td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td><%= @cat.color %></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td><%= @cat.sex %></td>
+    </tr>
+</table>
+<br>
+<br>
+<%= button_to "Edit Cat", edit_cat_url(@cat), method: :get %>
+<br>
+<br>
+<%= button_to "Cat list", cats_url, method: :get %>
+
+
+<!-- <table>
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+    </tr>
+      <tr>
+        <td>age</td>
+        <td>almost 7 years</td>
+      </tr>
+      <tr>
+        <td>birth_date</td>
+        <td>2010-02-03</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>black</td>
+      </tr>
+      <tr>
+        <td>sex</td>
+        <td>F</td>
+      </tr>
+  </table> -->
